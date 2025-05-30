@@ -49,12 +49,7 @@ export default defineConfig({
     
     // Sidebar
     sidebar: {
-      '/guide/': [
-        {
-          text: 'Introduction',
-          link: '/guide/'
-        }
-      ],
+    
       '/projects/bux/': [
         {
           text: 'BaseUX',
