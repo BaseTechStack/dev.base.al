@@ -15,7 +15,6 @@ export default defineConfig({
     // Top navigation bar
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
       { 
         text: 'Projects',
         items: [
@@ -190,7 +189,7 @@ export default defineConfig({
     // Footer
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present Base Tech Stack'
+      copyright: 'Copyright © 2024-present BaseCode Inc.'
     },
     
     // Search
