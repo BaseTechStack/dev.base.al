@@ -18,9 +18,9 @@ The Base framework provides a powerful storage system for handling file uploads 
 
 Storage configuration is handled through environment variables:
 
-```env
+```bash
 # Storage configuration
-STORAGE_DRIVER=local  # Options: local, s3, r2
+STORAGE_PROVIDER=local  # Options: local, s3, r2
 STORAGE_PATH=storage  # Local storage path
 
 # For S3/R2 configuration

@@ -68,7 +68,7 @@ Refer to the [Directory Structure](./directory_structure.md) for more details.
 
 Base CLI creates a `.env` file in your project root with your configuration:
 
-```env
+```bash
 # Server configuration
 SERVER_ADDRESS=:8080
 APPHOST=http://localhost
@@ -387,7 +387,7 @@ If you're having trouble connecting to the database, check your `.env` configura
 
 If you're experiencing CORS issues when calling your API from a frontend application, set the `CORS_ALLOWED_ORIGINS` environment variable:
 
-```env
+```bash
 CORS_ALLOWED_ORIGINS=http://localhost:3000,https://yourdomain.com
 ```
 

@@ -1,0 +1,13 @@
+/* Global CSS */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling on body */
+}
+
+/* Ensure smooth scrolling for main content */
+main {
+  scroll-behavior: smooth;
+}

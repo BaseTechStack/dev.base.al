@@ -18,7 +18,7 @@ The Base framework includes a flexible database system built on top of GORM, sup
 
 The database system can be configured through environment variables:
 
-```env
+```bash
 # Database configuration
 DB_DRIVER=sqlite       # Options: sqlite, mysql, postgres
 DB_PATH=database.db    # Path for SQLite database
@@ -212,7 +212,7 @@ tx.Commit()
 
 SQLite is ideal for development, testing, or small applications. It stores the database in a single file.
 
-```env
+```bash
 DB_DRIVER=sqlite
 DB_PATH=database.db
 ```
@@ -221,7 +221,7 @@ DB_PATH=database.db
 
 MySQL is a popular open-source relational database management system.
 
-```env
+```bash
 DB_DRIVER=mysql
 DB_HOST=localhost
 DB_PORT=3306
@@ -232,7 +232,7 @@ DB_NAME=base
 
 Or using a connection string:
 
-```env
+```bash
 DB_DRIVER=mysql
 DB_URL=root:password@tcp(localhost:3306)/base?charset=utf8mb4&parseTime=True&loc=Local
 ```
@@ -241,7 +241,7 @@ DB_URL=root:password@tcp(localhost:3306)/base?charset=utf8mb4&parseTime=True&loc
 
 PostgreSQL is a powerful, open-source object-relational database system.
 
-```env
+```bash
 DB_DRIVER=postgres
 DB_HOST=localhost
 DB_PORT=5432
@@ -252,7 +252,7 @@ DB_NAME=base
 
 Or using a connection string:
 
-```env
+```bash
 DB_DRIVER=postgres
 DB_URL=host=localhost port=5432 user=postgres dbname=base password=password sslmode=disable
 ```

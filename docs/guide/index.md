@@ -10,7 +10,7 @@ Welcome to the Base Tech Stack documentation! This guide will help you get start
 
 Base Tech Stack provides a collection of tools, frameworks, and components designed to accelerate your development process. Our main projects include:
 
-- **BaseNuxt**: A Nuxt.js-based framework with entity management and component generation
+- **BaseUX**: A Nuxt.js-based framework with entity management and component generation
 - **Albafone**: Mobile application with multi-language support
 - **Component Library**: Reusable components for rapid development
 

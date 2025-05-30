@@ -20,7 +20,7 @@ The configuration system supports the following environment variables:
 
 ### General Settings
 
-```env
+```bash
 # General application settings
 SERVER_ADDRESS=:8001         # Server port (format: ":port")
 APPHOST=http://localhost     # Base URL for the application
@@ -34,7 +34,7 @@ CORS_ALLOWED_ORIGINS=        # Comma-separated list of allowed origins for CORS
 
 ### Database Settings
 
-```env
+```bash
 # Database configuration
 DB_DRIVER=mysql              # Options: sqlite, mysql, postgres
 DB_USER=root                 # Database username
@@ -48,7 +48,7 @@ DB_URL=                      # Complete database URL (overrides individual setti
 
 ### Email Settings
 
-```env
+```bash
 # Email configuration
 EMAIL_PROVIDER=default       # Email provider (default, smtp, sendgrid, postmark)
 EMAIL_FROM_ADDRESS=no-reply@localhost  # From email address
@@ -69,7 +69,7 @@ POSTMARK_ACCOUNT_TOKEN=token # Postmark account token
 
 ### Storage Settings
 
-```env
+```bash
 # Storage configuration
 STORAGE_PROVIDER=local       # Storage provider (local, s3, r2)
 STORAGE_PATH=storage/uploads # Path for local storage
@@ -264,7 +264,7 @@ func (c *Config) GetStorageConfig() map[string]interface{} {
 
 You can set environment variables in a `.env` file or directly in the environment:
 
-```env
+```bash
 # .env file
 ENV=production
 SERVER_ADDRESS=:8080

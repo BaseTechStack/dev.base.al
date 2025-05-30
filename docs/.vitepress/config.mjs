@@ -7,7 +7,10 @@ export default defineConfig({
   lang: 'en-US',
   lastUpdated: true,
   ignoreDeadLinks: true, // Ignore dead links to allow build to complete
-  
+  markdown: {
+    lineNumbers: true,
+    'env': 'production',
+  },
   // Theme-related options
   themeConfig: {
     // Logo in the nav bar
@@ -20,7 +23,7 @@ export default defineConfig({
       { 
         text: 'Projects', 
         items: [
-          { text: 'BaseNuxt', link: '/projects/basenuxt/' },
+          { text: 'BaseUX', link: '/projects/bux/' },
           { text: 'Base', link: '/projects/base/' },
           { text: 'Base CMD', link: '/projects/basecmd/' },
           { text: 'BaseQL', link: '/projects/baseql/' },
@@ -46,14 +49,51 @@ export default defineConfig({
           ]
         }
       ],
+      '/projects/bux/': [
+        {
+          text: 'BaseUX',
+          items: [
+            { text: 'Overview', link: '/projects/bux/' },
+            { text: 'Installation', link: '/projects/bux/installation' },
+            { text: 'Getting Started', link: '/projects/bux/getting-started' },
+            { text: 'Architecture', link: '/projects/bux/architecture' },
+            { text: 'Module Features', link: '/projects/bux/module-features' },
+            { text: 'Commands', link: '/projects/bux/commands' },
+          ]
+        },
+        {
+          text: 'Core Features',
+          items: [
+            { text: 'Components', link: '/projects/bux/core/components' },
+            { text: 'Composables', link: '/projects/bux/core/composables' },
+            { text: 'Entity Generation', link: '/projects/bux/core/entity-generation' },
+            { text: 'Layouts', link: '/projects/bux/core/layouts' },
+            { text: 'Middleware', link: '/projects/bux/core/middleware' },
+            { text: 'Services', link: '/projects/bux/core/services' },
+            { text: 'Stores', link: '/projects/bux/core/stores' },
+            { text: 'Types', link: '/projects/bux/core/types' },
+          ]
+        }
+      ],
       '/projects/basenuxt/': [
         {
-          text: 'BaseNuxt',
+          text: '⚠️ Important Notice',
+          items: [
+            { text: 'BaseNuxt Renamed to BaseUX', link: '/projects/basenuxt/name-change-notice' }
+          ]
+        },
+        {
+          text: 'BaseNuxt Documentation',
           items: [
             { text: 'Overview', link: '/projects/basenuxt/' },
-            { text: 'Store Pattern', link: '/projects/basenuxt/store-pattern' },
-            { text: 'Entity Generation', link: '/projects/basenuxt/entity-generation' },
-            { text: 'Sidebar Navigation', link: '/projects/basenuxt/sidebar-navigation' }
+            { text: 'Installation', link: '/projects/basenuxt/installation' },
+            { text: 'Commands', link: '/projects/basenuxt/commands' }
+          ]
+        },
+        {
+          text: 'New BaseUX Documentation',
+          items: [
+            { text: 'Go to BaseUX Documentation', link: '/projects/bux/' }
           ]
         }
       ],

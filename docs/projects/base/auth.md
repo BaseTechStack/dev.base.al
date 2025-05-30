@@ -195,7 +195,7 @@ Base supports OAuth authentication with popular providers like Google, Facebook,
 
 To enable OAuth authentication, configure your provider credentials in your environment variables:
 
-```env
+```bash
 # Google OAuth
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret

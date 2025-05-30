@@ -2,13 +2,13 @@
 title: Store Pattern
 ---
 
-# Store Pattern in BaseNuxt
+# Store Pattern in BaseUX
 
-This page documents the store pattern implementation in BaseNuxt, highlighting the integration between the base store and entity-specific stores.
+This page documents the store pattern implementation in BaseUX, highlighting the integration between the base store and entity-specific stores.
 
 ## Overview
 
-The BaseNuxt store system uses composition with Pinia's `defineStore` for state management. This approach provides better type safety, improved developer experience, and more maintainable code.
+The BaseUX store system uses composition with Pinia's `defineStore` for state management. This approach provides better type safety, improved developer experience, and more maintainable code.
 
 ## Implementation Details
 

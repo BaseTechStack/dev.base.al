@@ -19,14 +19,14 @@ hero:
       link: https://github.com/BaseTechStack
 
 features:
-  - icon: 🚀
-    title: BaseNuxt
-    details: CLI tool and framework for rapid Vue/Nuxt application development with entity management
-    link: /projects/basenuxt/
   - icon: ⚙️
-    title: Base
+    title: base
     details: Core framework for building robust and scalable APIs in Go
     link: /projects/base/
+  - icon: 🚀
+    title: BaseUX
+    details: CLI tool and framework for rapid Vue/Nuxt application development with entity management
+    link: /projects/bux/
   - icon: 📊
     title: BaseQL
     details: Go framework for rapidly building powerful GraphQL servers
@@ -39,8 +39,8 @@ features:
     title: BaseUI Flutter
     details: UI component library for Flutter applications
     link: /projects/baseui-flutter/
-  - icon: 🧠
-    title: Vue3 Mindmap
-    details: Lightweight and customizable mindmap component for Vue 3 applications
-    link: /projects/vue3-mindmap/
+  - icon: 🥮
+    title: Hex
+    details: Lightweight hexagonal architecture framework for Ruby applications
+    link: /projects/hex/
 ---

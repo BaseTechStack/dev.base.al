@@ -71,7 +71,7 @@ The API Key middleware validates requests using an API key provided in the reque
 
 Set your API key in your environment variables:
 
-```env
+```bash
 API_KEY=your-secure-api-key
 ```
 

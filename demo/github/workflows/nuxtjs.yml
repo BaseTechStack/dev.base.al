@@ -1,0 +1,77 @@
+# Workflow for building and deploying a Nuxt site to CapRover
+#
+# To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
+#
+name: Deploy demo to CapRover
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN
+permissions:
+  contents: read
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "demo-deploy"
+  cancel-in-progress: false
+
+jobs:
+  # Build and deploy job
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      
+      - name: Install dependencies
+        run: bun install
+      
+      - name: Static HTML export with Nuxt
+        run: bun run generate
+        env:
+          API_URL: https://demo-api.base.al/api
+
+      - name: Prepare deployment package
+        run: |
+          # Debug: Display the contents of captain-definition file
+          echo "Contents of captain-definition file:"
+          cat captain-definition
+          
+          # Prepare deployment package
+          rm -rf deploy_package
+          mkdir deploy_package
+          cp -r .output/public/* deploy_package/
+          cp captain-definition deploy_package/
+          
+          # Debug: Verify captain-definition in deploy_package
+          echo "\nContents of captain-definition in deploy_package:"
+          cat deploy_package/captain-definition
+          
+          # Create tar file
+          cd deploy_package
+          tar -cvf ../deploy.tar .
+          
+          # Debug: List contents of tar file
+          echo "\nListing contents of tar file:"
+          cd ..
+          tar -tvf deploy.tar | grep captain-definition
+      
+      - name: Deploy to CapRover
+        uses: caprover/deploy-from-github@main
+        with:
+          server: '${{ secrets.CAPROVER_SERVER }}'
+          app: '${{ secrets.CAPROVER_APP }}'
+          token: '${{ secrets.CAPROVER_APP_TOKEN }}'

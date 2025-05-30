@@ -20,7 +20,7 @@ The Base framework includes a powerful, structured logging system built on top o
 
 The logger system can be configured through environment variables:
 
-```env
+```bash
 # Logger configuration
 LOG_LEVEL=info        # Options: debug, info, warn, error, fatal
 LOG_PATH=logs         # Directory for log files

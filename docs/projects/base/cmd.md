@@ -74,7 +74,7 @@ Your API will be available at http://localhost:8080
 
 Base uses environment variables for configuration. A .env file is automatically created with your new project:
 
-```env
+```bash
 SERVER_ADDRESS=:8080
 JWT_SECRET=your_jwt_secret
 API_KEY=your_api_key

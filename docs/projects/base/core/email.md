@@ -18,7 +18,7 @@ The Base framework provides a flexible email system that supports multiple email
 
 Email configuration is handled through environment variables:
 
-```env
+```bash
 # Email configuration
 MAIL_DRIVER=smtp     # Options: smtp, sendgrid, postmark, default
 MAIL_FROM=no-reply@example.com

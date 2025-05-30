@@ -194,7 +194,7 @@ storage/
 
 Contains environment-specific configuration:
 
-```env
+```bash
 SERVER_ADDRESS=:8080
 JWT_SECRET=your_jwt_secret
 API_KEY=your_api_key
