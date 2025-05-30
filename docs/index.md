@@ -1,15 +1,15 @@
 ---
 layout: home
-title: BaseDev
-titleTemplate: Open Source Projects Documentation
+title: Base Dev
+titleTemplate: Open Source Projects Documentation | Base Dev
 
 hero:
-  name: BaseDev
+  name: Base Dev
   text: Development Ecosystem
   tagline: Modern frameworks and tools for rapid application development used by BaseCode Inc.
   image:
-    src: /logo.png
-    alt: BaseDev Logo
+    src: /logo.svg
+    alt: Base Logo
   actions:
     - theme: brand
       text: Get Started
