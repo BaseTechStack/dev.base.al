@@ -1,29 +1,19 @@
-FROM oven/bun:1 as build
-
-# Set working directory
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-COPY bun.lock ./
-
-# Install dependencies
-RUN bun install
-
-# Copy project files
-COPY . .
-
-# Build the VitePress site
-RUN bun run docs:build
-
-# Production stage with nginx for serving static files
+# Simple static file server based on nginx
 FROM nginx:alpine
 
-# Copy built static files to nginx
-COPY --from=build /app/docs/.vitepress/dist /usr/share/nginx/html
+# Copy custom nginx config (for SPA routing)
+RUN echo 'server {\
+  listen 80;\
+  server_name _;\
+  root /usr/share/nginx/html;\
+  index index.html;\
+  location / {\
+    try_files $uri $uri/ /index.html;\
+  }\
+}' > /etc/nginx/conf.d/default.conf
 
-# Copy nginx config (optional, can use default)
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy the pre-built VitePress static files
+COPY ./docs/.vitepress/dist /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
