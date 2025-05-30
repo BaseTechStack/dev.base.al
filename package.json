@@ -1,0 +1,25 @@
+{
+  "name": "dev.base.al",
+  "version": "1.0.0",
+  "description": "Documentation for BaseTechStack repositories",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaseTechStack/dev.base.al.git"
+  },
+  "keywords": [],
+  "author": "BaseTechStack, Flakerim Ismani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BaseTechStack/dev.base.al/issues"
+  },
+  "homepage": "https://github.com/BaseTechStack/dev.base.al#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
