@@ -4,7 +4,7 @@ title: Base Dev
 titleTemplate: Open Source Projects Documentation | Base Dev
 
 hero:
-  name: Base Dev
+  name: base 
   text: Development Ecosystem
   tagline: Modern frameworks and tools for rapid application development used by BaseCode Inc.
   image:

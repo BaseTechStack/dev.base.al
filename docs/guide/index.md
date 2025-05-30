@@ -2,35 +2,104 @@
 title: Getting Started
 ---
 
-# Getting Started with Base Tech Stack
+# Getting Started with Base Dev Ecosystem
 
-Welcome to the Base Tech Stack documentation! This guide will help you get started with our open source projects and components.
+Welcome to the Base Dev documentation! This guide will help you understand how our ecosystem works together to accelerate your development process.
 
-## Overview
+## The Base Ecosystem Architecture
 
-Base Tech Stack provides a collection of tools, frameworks, and components designed to accelerate your development process. Our main projects include:
+Base Dev provides a comprehensive suite of frameworks and tools that work seamlessly together:
 
-- **BaseUX**: A Nuxt.js-based framework with entity management and component generation
-- **Albafone**: Mobile application with multi-language support
-- **Component Library**: Reusable components for rapid development
+![Base Ecosystem](/images/base-ecosystem.png)
 
-## Quick Start
+### Core Components
 
-To get started with any of our projects, you'll need to:
+1. **Backend Framework (Base)**: Go-based API framework for building robust, scalable backends
+2. **Frontend Framework (BaseUX)**: Vue/Nuxt.js-based framework for rapid UI development
+3. **Mobile Framework (BaseUI Flutter)**: Flutter component library for consistent web / desktop experiences
+4. **Tools & Utilities**: CLI tools for code generation and project management
 
-1. Clone the repository from GitHub
-2. Install dependencies
-3. Configure the project according to your needs
-4. Start the development server
+## How the Ecosystem Works Together
 
-For detailed installation instructions, check out the [Installation](/guide/installation) page.
+### API Development with Base
 
-## Documentation Structure
+Base is our core Go framework for building APIs. It provides:
 
-Our documentation is organized into the following sections:
+- Rapid API development with convention-over-configuration patterns
+- Built-in authentication, middleware, and database integration
+- GraphQL support through BaseQL for flexible data queries
+- RESTful API generation based on entity models
 
-- **Guide**: General information and getting started guides
-- **Components**: Details about our reusable components
-- **Projects**: Specific documentation for each of our main projects
+```bash
+# Creating a new Base API project
+base new myproject
+```
 
-Choose a section from the sidebar to navigate through our documentation.
+### Frontend Development with BaseUX
+
+BaseUX (formerly BaseNuxt) is our Vue/Nuxt.js framework that:
+
+- Automatically connects to Base APIs
+- Provides entity management with generated CRUD interfaces
+- Includes a robust component library and store system
+- Supports customizable layouts and middleware
+
+```bash
+# Creating a new BaseUX project
+bux new myproject
+```
+
+### Mobile Development with BaseUI Flutter
+
+BaseUI Flutter is our Flutter component library that:
+
+- Provides consistent UI components matching web interfaces
+- Includes multi-language support for global applications
+- Offers CLI tools for rapid code generation
+- Connects seamlessly to Base APIs
+
+```bash
+# Generating Flutter components
+baseui new myproject
+```
+
+## Getting the Most from Base Dev
+
+### Full-Stack Development Workflow
+
+For maximum productivity, we recommend this workflow:
+
+1. **Define your entities** in Base API first
+2. **Generate corresponding frontends** with BaseUX 
+3. **Create mobile interfaces** with BaseUI Flutter
+4. **Customize as needed** while maintaining the core architecture
+
+### Cross-Platform Consistency
+
+The Base ecosystem ensures consistent experiences across platforms:
+
+- **Shared entity models** between backend, web, and mobile
+- **Consistent design language** across all platforms
+- **Unified authentication** and authorization
+- **Centralized business logic** in the API layer
+
+### Development Acceleration
+
+Our tools are designed to eliminate repetitive tasks:
+
+- **Code generation** for entities across all platforms
+- **Automatic CRUD operations** for all entities
+- **Pre-built components** for common UI patterns
+- **CLI tools** for rapid scaffolding
+ 
+
+## Next Steps
+
+Explore our detailed documentation for each component:
+
+- [Base API Framework](/projects/base/)
+- [BaseUX Framework](/projects/bux/)
+- [BaseUI Flutter](/projects/baseui-flutter/)
+- [CLI Tools](/projects/basecmd/)
+
+Or continue with our [Installation Guide](/guide/installation) for detailed setup instructions.
