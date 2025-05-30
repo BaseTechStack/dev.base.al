@@ -5,7 +5,7 @@ titleTemplate: Open Source Projects Documentation | Base Dev
 
 hero:
   name: base 
-  text: Development Ecosystem
+  text: Development Ecosystem from BaseCode Inc.
   tagline: Modern frameworks and tools for rapid application development used by BaseCode Inc.
   image:
     src: /logo.svg
