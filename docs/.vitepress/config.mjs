@@ -2,36 +2,47 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // Site-level options
-  title: 'Base Tech Stack',
-  description: 'Documentation for BaseTechStack opensource projects',
+  title: 'Base Dev',
+  description: 'Documentation for Base opensource projects by BaseCode Inc.',
   lang: 'en-US',
   lastUpdated: true,
   ignoreDeadLinks: true, // Ignore dead links to allow build to complete
-  markdown: {
-    lineNumbers: true,
-    'env': 'production',
-  },
   // Theme-related options
   themeConfig: {
     // Logo in the nav bar
-    logo: '/logo.png',
+    logo: '/logo.svg',
     
     // Top navigation bar
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { 
-        text: 'Projects', 
+        text: 'Projects',
         items: [
-          { text: 'BaseUX', link: '/projects/bux/' },
-          { text: 'Base', link: '/projects/base/' },
-          { text: 'Base CMD', link: '/projects/basecmd/' },
-          { text: 'BaseQL', link: '/projects/baseql/' },
-          { text: 'BaseORM', link: '/projects/baseorm/' },
-          { text: 'BaseUI Flutter', link: '/projects/baseui-flutter/' },
-          { text: 'BaseUI Flutter CMD', link: '/projects/baseui-flutter-cmd/' },
-          { text: 'Hex', link: '/projects/hex/' },
-          { text: 'Vue3 Mindmap', link: '/projects/vue3-mindmap/' }
+          { 
+            text: 'Backend Frameworks',
+            items: [
+              { text: 'Base', link: '/projects/base/' },
+              { text: 'BaseQL', link: '/projects/baseql/' },
+              { text: 'Hex', link: '/projects/hex/' }
+            ]
+          },
+          {
+            text: 'Frontend Frameworks',
+            items: [
+              { text: 'BaseUX', link: '/projects/bux/' },
+              { text: 'BaseUI Flutter', link: '/projects/baseui-flutter/' },
+              { text: 'Vue3 Mindmap', link: '/projects/vue3-mindmap/' }
+            ]
+          },
+          {
+            text: 'Tools',
+            items: [
+              { text: 'Base CMD', link: '/projects/basecmd/' },
+              { text: 'Base ORM', link: '/projects/baseorm/' },
+              { text: 'BaseUI Flutter CMD', link: '/projects/baseui-flutter-cmd/' }
+            ]
+          }
         ]
       },
       { text: 'GitHub', link: 'https://github.com/BaseTechStack' }
@@ -160,15 +171,6 @@ export default defineConfig({
           ]
         }
       ],
-      '/projects/baseui-flutter-cmd/': [
-        {
-          text: 'BaseUI Flutter CMD',
-          items: [
-            { text: 'Overview', link: '/projects/baseui-flutter-cmd/' },
-            { text: 'Commands', link: '/projects/baseui-flutter-cmd/commands' }
-          ]
-        }
-      ],
       '/projects/hex/': [
         {
           text: 'Hex',
@@ -177,21 +179,16 @@ export default defineConfig({
             { text: 'Hexagonal Architecture', link: '/projects/hex/architecture' }
           ]
         }
-      ],
-      '/projects/vue3-mindmap/': [
-        {
-          text: 'Vue3 Mindmap',
-          items: [
-            { text: 'Overview', link: '/projects/vue3-mindmap/' },
-            { text: 'Usage', link: '/projects/vue3-mindmap/usage' }
-          ]
-        }
       ]
     },
     
     // Social links
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/BaseTechStack' }
+      { icon: 'github', link: 'https://github.com/BaseTechStack' },
+      { icon: 'twitter', link: 'https://x.com/basecode' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/company/basecode-llc' },
+      { icon: 'instagram', link: 'https://www.instagram.com/basecode.AL' },
+      { icon: 'facebook', link: 'https://www.facebook.com/basecodeLLC' }
     ],
     
     // Footer

@@ -1,15 +1,15 @@
 ---
 layout: home
-title: Base Tech Stack
+title: BaseDev
 titleTemplate: Open Source Projects Documentation
 
 hero:
-  name: Base Tech Stack
-  text: Documentation Hub
-  tagline: Comprehensive guides and documentation for BaseTechStack open source projects
+  name: BaseDev
+  text: Development Ecosystem
+  tagline: Modern frameworks and tools for rapid application development used by BaseCode Inc.
   image:
     src: /logo.png
-    alt: Base Tech Stack Logo
+    alt: BaseDev Logo
   actions:
     - theme: brand
       text: Get Started
