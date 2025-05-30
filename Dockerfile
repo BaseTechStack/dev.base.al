@@ -1,4 +1,4 @@
-FROM node:20-alpine as build
+FROM oven/bun:1 as build
 
 # Set working directory
 WORKDIR /app
@@ -8,13 +8,13 @@ COPY package*.json ./
 COPY bun.lock ./
 
 # Install dependencies
-RUN npm ci
+RUN bun install
 
 # Copy project files
 COPY . .
 
 # Build the VitePress site
-RUN npm run docs:build
+RUN bun run docs:build
 
 # Production stage with nginx for serving static files
 FROM nginx:alpine
