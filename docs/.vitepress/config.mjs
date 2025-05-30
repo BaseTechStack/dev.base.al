@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // Site-level options
-  title: 'Base Dev',
+  title: 'Base',
   description: 'Documentation for Base opensource projects by BaseCode Inc.',
   lang: 'en-US',
   lastUpdated: true,
@@ -53,11 +53,7 @@ export default defineConfig({
       '/guide/': [
         {
           text: 'Introduction',
-          items: [
-            { text: 'Getting Started', link: '/guide/' },
-            { text: 'Installation', link: '/guide/installation' },
-            { text: 'Configuration', link: '/guide/configuration' }
-          ]
+          link: '/guide/'
         }
       ],
       '/projects/bux/': [
