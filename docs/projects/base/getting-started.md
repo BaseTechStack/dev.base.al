@@ -19,7 +19,7 @@ Before you begin, make sure you have the following installed:
 Base provides a command-line interface (CLI) tool that makes it easy to create and manage projects. Install it with a single command:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/base-go/cmd/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/BaseTechStack/basecmd/main/install.sh | bash
 ```
 
 This will download and install the Base CLI globally on your system.

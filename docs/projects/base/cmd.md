@@ -11,7 +11,7 @@ Base CLI is a powerful command-line tool designed to streamline development with
 Install Base CLI with a single command:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/base-go/cmd/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/BaseTechStack/basecmd/main/install.sh | bash
 ```
 
 ## Available Commands

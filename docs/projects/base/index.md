@@ -49,7 +49,7 @@ To start using Base, install the CLI tool and create your first project:
 
 ```bash
 # Install Base CLI
-curl -sSL https://raw.githubusercontent.com/base-go/cmd/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/BaseTechStack/basecmd/main/install.sh | bash
 
 # Create a new project
 base new myapp
@@ -80,7 +80,7 @@ For detailed documentation on Base features and usage, refer to:
 
 - [GitHub Repository](https://github.com/BaseTechStack/base)
 - [Issue Tracker](https://github.com/BaseTechStack/base/issues)
-- [CLI Repository](https://github.com/base-go/cmd)
+- [CLI Repository](https://github.com/BaseTechStack/basecmd)
 
 ## License
 

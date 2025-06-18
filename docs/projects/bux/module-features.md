@@ -48,7 +48,7 @@ Pages are the entry point for the entity's data. They use the stores to get the 
 ## Auto Loading
 
 All entities are auto loaded via Nuxt auto import feature. You can import any entity from the `structures` directory. For example, you can import the `Category` entity from `structures/categories/stores/category.ts`.
-If Component is in directory, add directory name in front of the component name. For example, `structures/categories/components/category/grid.vue` can be auto imported as `CategoryGrid` from `'categories/components/category/grid.vue'`.
+If Component is in directory, add directory name in front of the component name. For example, `structures/categories/components/category/grid.vue` can be auto imported as `CategoryGrid` from `categories/components/category/grid.vue`.
 
 
 ## Entity Generation System
